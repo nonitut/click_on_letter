@@ -1,0 +1,64 @@
+*{ box-sizing: border-box;}
+html, body{ height: 100%;}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{ font-family: 'CarlaSansLight';
+    font-size: 70px;
+}
+
+.word {
+    width: 100%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.letter {
+    cursor: pointer;
+
+}
+
+.animated.rotate {
+    animation: rotate 1s forwards;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg); }
+    to { transform: rotate(360deg);}
+}
+
+.animated.scale {
+    animation: scale 1s forwards;
+}
+
+@keyframes scale {
+    from {transform: scale(1);}
+    to {  transform: scale(1.5);}
+}
+
+.animated.fade-out {
+    animation: fade-out 1s forwards;
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.animated.move-up {
+    animation: move-up 1s forwards;
+}
+
+@keyframes move-up {
+    from { transform: translateY(0);}
+    to {transform: translateY(-50px); }
+}
+
